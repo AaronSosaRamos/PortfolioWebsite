@@ -5,6 +5,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTiktok, faReddit, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const Banner = () => {
+
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+    e.preventDefault();
+    document.querySelector(targetId)?.scrollIntoView({
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <div className="bg-white py-16 sm:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -27,11 +35,11 @@ const Banner = () => {
               Passionate about creating innovative solutions using the latest technologies in software development and artificial intelligence.
             </p>
             <div className="mt-8 text-center md:text-left flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-4">
-              <Link href="/projects">
+              <a href="/#projects" onClick={(e) => handleLinkClick(e, '#projects')}>
                 <span className="inline-block bg-purple-600 text-white py-3 px-6 rounded-md text-lg font-medium hover:bg-purple-700 transition duration-300 ease-in-out w-full md:w-auto">
                   Explore My Work
                 </span>
-              </Link>
+              </a>
               <div className="flex flex-wrap justify-center md:justify-start space-x-4 md:space-x-4 space-y-4 md:space-y-0 mt-2 md:mt-0 items-center pt-2">
                 <Link href="https://github.com/AaronSosaRamos" target="_blank" className="transition duration-300 ease-in-out transform hover:scale-110 hover:text-purple-600 max-md:pt-[1rem]">
                   <Github className="h-8 w-8 text-gray-600 hover:text-purple-600" />
@@ -43,7 +51,7 @@ const Banner = () => {
                   <Youtube className="h-8 w-8 text-gray-600 hover:text-purple-600" />
                 </Link>
                 <Link href="https://x.com/WilAI1624" target="_blank" className="transition duration-300 ease-in-out transform hover:scale-110 hover:text-purple-600">
-                  <FontAwesomeIcon icon={faXTwitter} className="h-8 w-8 text-gray-600 hover:text-purple-600"  />
+                  <FontAwesomeIcon icon={faXTwitter} className="h-8 w-8 text-gray-600 hover:text-purple-600" />
                 </Link>
                 <Link href="https://www.tiktok.com/@wilfredososaai" target="_blank" className="transition duration-300 ease-in-out transform hover:scale-110 hover:text-purple-600">
                   <FontAwesomeIcon icon={faTiktok} className="h-8 w-8 text-gray-600 hover:text-purple-600" />

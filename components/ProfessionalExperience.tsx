@@ -5,7 +5,7 @@ const ProfessionalExperience = () => {
     return (
         <div className="bg-gray-100 py-16 sm:py-24">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl text-center">Professional Experience</h2>
+                <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl text-center mb-12">Professional Experience</h2>
                 <div className="mt-8 space-y-12">
                     <div className="flex flex-col md:flex-row items-center md:items-start md:space-x-8">
                         <div className="md:w-2/3">
