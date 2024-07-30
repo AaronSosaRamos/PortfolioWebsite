@@ -42,11 +42,11 @@ const Navbar: React.FC = () => {
                   Projects
                 </span>
               </a>
-              <Link href="/repositories">
+              <a href="/#repositories" onClick={(e) => handleLinkClick(e, '#repositories')}>
                 <span className="text-gray-300 hover:bg-purple-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer transition duration-300 ease-in-out">
                   Repositories
                 </span>
-              </Link>
+              </a>
               <Link href="/courses">
                 <span className="text-gray-300 hover:bg-purple-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer transition duration-300 ease-in-out">
                   Courses
@@ -88,11 +88,11 @@ const Navbar: React.FC = () => {
                 Projects
               </span>
             </a>
-            <Link href="/repositories">
+            <a href="/#repositories" onClick={(e) => handleLinkClick(e, '#repositories')}>
               <span className="text-gray-300 hover:bg-purple-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium cursor-pointer transition duration-300 ease-in-out">
                 Repositories
               </span>
-            </Link>
+            </a>
             <Link href="/courses">
               <span className="text-gray-300 hover:bg-purple-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium cursor-pointer transition duration-300 ease-in-out">
                 Courses

@@ -26,21 +26,21 @@ const Projects = () => {
       techImages: ['/langchain.png', '/crewai.png', '/gmail.png', '/tavily.png']
     },
     {
-      title: 'mission-quizzify-imp',
+      title: 'Gemini Quizzify',
       description: 'Implemented an AI pipeline for automating the development of multiple-choice questions based on the RAG approach for retrieving context from PDF files. Utilized LangChain, Vertex AI API, Streamlit UI, ChromaDB, and PyPDF.',
       image: '/mission-quizzify.png',
       repoLink: 'https://github.com/AaronSosaRamos/mission-quizify-imp',
       techImages: ['/langchain.png', '/vertexai.png', '/streamlit.png', '/chromadb.png', '/pdf.png']
     },
     {
-      title: 'mission-dynamo',
+      title: 'Gemini Dynamo',
       description: 'Implemented a full-stack project for automating the retrieval of key concepts from YouTube videos. For the frontend, used React with Vite and MUI for enhancing UI/UX. For the backend, developed an AI pipeline using FastAPI, LangChain, Vertex AI API, and YouTube transcript API.',
       image: '/mission-dynamo.png',
       repoLink: 'https://github.com/AaronSosaRamos/mission-dynamo',
       techImages: ['/langchain.png', '/fastapi.svg', '/vertexai.png', '/youtube.png']
     },
     {
-      title: 'mission-flights',
+      title: 'Gemini Flight Manager',
       description: 'Developed an AI agent for automating the process of booking flights. Retrieves info from databases about available flights and books the required flights based on payment criteria. Developed using LangChain, Streamlit UI, Vertex AI API, FastAPI, SQLite, Uvicorn, Pydantic Schema, and SQLAlchemy (ORM).',
       image: '/mission-flights.png',
       repoLink: 'https://github.com/AaronSosaRamos/mission-flights',
