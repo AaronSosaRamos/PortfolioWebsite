@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Github } from 'lucide-react';
+import { Github, Youtube } from 'lucide-react';
 
 const Repositories = () => {
   const repositoryData = [
@@ -9,6 +9,7 @@ const Repositories = () => {
       description: `This portfolio contains more than 50 projects and lessons about Machine Learning fundamentals (Supervised, unsupervised, semi-supervised, and reinforcement learning), MIT Deep Learning masterclasses, and state-of-art lessons from Hands on Machine Learning book. Welcome to my Professional AI Portfolio! This repository contains detailed projects showcasing my work in Machine Learning (ML), Deep Learning (DL), HuggingFace Large Language Models (LLMs), and Computer Vision (CV).`,
       image: '/aiportfolio.png',
       repoLink: 'https://github.com/AaronSosaRamos/ProfessionalAIPortfolio',
+      videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
       techImages: ['/tensorflow.png', '/pytorch.png', '/huggingface.png', '/mit.png', '/numpy.png', '/pandas.png', '/matplotlib.png', '/seaborn.svg', '/scikit-learn.png', '/opencv.png']
     },
     {
@@ -16,6 +17,7 @@ const Repositories = () => {
       description: `This repository contains several projects about Tensorflow fundamentals and best practices for NN, as well as advanced lessons about Neural Networks Architectures like Optimization Techniques, Regularization Techniques, Advanced Activation Functions, Initialization Techniques, CNN, RNN, GAN, Autoencoders, Siamese Networks, and Deep RL with several HuggingFace Transformers and models with the best practices.`,
       image: '/nnarchitectures.png',
       repoLink: 'https://github.com/AaronSosaRamos/NeuralNetworkArchitectures',
+      videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
       techImages: ['/tensorflow.png', '/pytorch.png', '/huggingface.png', '/opencv.png']
     },
     {
@@ -23,6 +25,7 @@ const Repositories = () => {
       description: `This repository contains more than 50 projects about LangChain with Google Generative AI, VertexAI, and GPT-4o-mini. I implemented several advanced RAG techniques like self-RAG, Adaptative RAG, CRAG, RAPTOR, Multi-Modal RAG, LLM-as-a-judge, Self-Querying Retrieval, Parent Document Retriever, etc. Fine-tuning projects with HuggingFace models like Falcon-7B, Bloom7B, Mistral-7B, and Llama 2 and 3 with LoRA and QLoRA. Developed Agents with PAL chain, BabyAGI, Gemma 2 9B, and multiple Chat Agents with advanced LangGraph approaches.`,
       image: '/llmprojects.png',
       repoLink: 'https://github.com/AaronSosaRamos/LLM_Projects',
+      videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
       techImages: ['/langchain.png', '/openai.png', '/vertexai.png', '/google.png', '/huggingface.png', '/mistral.png', '/llama.png']
     }
   ];
@@ -54,11 +57,17 @@ const Repositories = () => {
                       </div>
                     ))}
                   </div>
-                  <div className="flex justify-center lg:justify-start">
+                  <div className="flex justify-center lg:justify-start space-x-4">
                     <Link href={repo.repoLink} target='_blank'>
                       <span className="inline-flex items-center bg-purple-600 text-white py-3 px-6 rounded-md text-lg font-medium hover:bg-purple-700 transition duration-300 ease-in-out">
                         <Github className="h-5 w-5 mr-2" />
-                        Go to the repo
+                        Repository
+                      </span>
+                    </Link>
+                    <Link href={repo.videoLink} target='_blank'>
+                      <span className="inline-flex items-center bg-red-600 text-white py-3 px-6 rounded-md text-lg font-medium hover:bg-red-700 transition duration-300 ease-in-out">
+                        <Youtube className="h-5 w-5 mr-2" />
+                        Video
                       </span>
                     </Link>
                   </div>

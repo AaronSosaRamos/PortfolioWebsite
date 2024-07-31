@@ -1,6 +1,7 @@
 "use client"
 
 import Banner from "@/components/Banner";
+import CourseSlider from "@/components/CourseSlider";
 import Navbar from "@/components/Navbar";
 import ProfessionalExperience from "@/components/ProfessionalExperience";
 import Projects from "@/components/Projects";
@@ -21,6 +22,9 @@ export default function Home() {
       </div>
       <div id="repositories">
         <Repositories />
+      </div>
+      <div id="courses">
+        <CourseSlider />
       </div>
     </>
   );
