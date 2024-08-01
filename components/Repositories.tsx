@@ -33,7 +33,7 @@ const Repositories = () => {
   return (
     <div className="bg-gradient-to-r from-gray-100 to-gray-300 py-16 sm:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl text-center mb-12">Repositories</h2>
+        <h2 className="text-3xl font-bold text-purple-900 sm:text-4xl lg:text-5xl text-center mb-12">Repositories</h2>
         <div className="space-y-16">
           {repositoryData.map((repo, index) => (
             <div key={index} className="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out transform hover:scale-105">

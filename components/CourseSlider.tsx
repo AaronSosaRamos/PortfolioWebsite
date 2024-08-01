@@ -69,7 +69,7 @@ const CoursesSlider = () => {
   return (
     <div className="relative w-full bg-gradient-to-r from-gray-200 to-gray-300 py-16 sm:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl text-center mb-12">Courses</h2>
+        <h2 className="text-3xl font-bold text-purple-900 sm:text-4xl lg:text-5xl text-center mb-12">Courses</h2>
         <div className="relative overflow-hidden">
           <div className="flex transition-transform duration-300 ease-in-out" style={{ transform: `translateX(-${current * 100}%)` }}>
             {coursesData.map((course, index) => (

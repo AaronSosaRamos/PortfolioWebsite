@@ -15,7 +15,7 @@ const Researches = () => {
   return (
     <div className="relative w-full bg-gradient-to-r from-gray-100 to-gray-200 py-16 sm:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl text-center mb-12">Researches</h2>
+        <h2 className="text-3xl font-bold text-purple-900 sm:text-4xl lg:text-5xl text-center mb-12">Researches</h2>
         <div className="relative overflow-hidden">
           <div className="min-w-full flex-shrink-0 p-2 sm:p-8 lg:p-16">
             <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6 lg:p-8 max-w-xs sm:max-w-sm lg:max-w-3xl mx-auto">
