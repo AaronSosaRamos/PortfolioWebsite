@@ -52,12 +52,12 @@ const Navbar: React.FC = () => {
                   Courses
                 </span>
               </a>
-              <Link href="/researches">
+              <Link href="/#researches" onClick={(e) => handleLinkClick(e, '#researches')}>
                 <span className="text-gray-300 hover:bg-purple-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer transition duration-300 ease-in-out">
                   Researches
                 </span>
               </Link>
-              <Link href="/contact">
+              <Link href="/#contact" onClick={(e) => handleLinkClick(e, '#contact')}>
                 <span className="text-gray-300 hover:bg-purple-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer transition duration-300 ease-in-out">
                   Contact
                 </span>
@@ -98,12 +98,12 @@ const Navbar: React.FC = () => {
                 Courses
               </span>
             </a>
-            <Link href="/researches">
+            <Link href="/#researches" onClick={(e) => handleLinkClick(e, '#researches')}>
               <span className="text-gray-300 hover:bg-purple-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium cursor-pointer transition duration-300 ease-in-out">
                 Researches
               </span>
             </Link>
-            <Link href="/contact">
+            <Link href="/#contact" onClick={(e) => handleLinkClick(e, '#contact')}>
               <span className="text-gray-300 hover:bg-purple-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium cursor-pointer transition duration-300 ease-in-out">
                 Contact
               </span>

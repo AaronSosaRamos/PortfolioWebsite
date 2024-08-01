@@ -32,7 +32,7 @@ const Banner = () => {
               Software and AI Engineer
             </h1>
             <p className="mt-4 text-lg text-gray-600 text-center md:text-left">
-              Passionate about creating innovative solutions using the latest technologies in software development and artificial intelligence.
+              Hi! I'm Wilfredo Sosa. I'm passionate about creating innovative solutions using the latest technologies in software development and artificial intelligence.
             </p>
             <div className="mt-8 text-center md:text-left flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-4">
               <a href="/#projects" onClick={(e) => handleLinkClick(e, '#projects')}>
