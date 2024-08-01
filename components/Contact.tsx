@@ -9,9 +9,9 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl text-center mb-12">Contact</h2>
         <div className="bg-white rounded-2xl shadow-lg p-8 sm:p-10 lg:p-12 max-w-3xl mx-auto text-center">
-          <h3 className="text-2xl font-semibold text-gray-900 mb-4">Hi, I'm Wilfredo!</h3>
+          <h3 className="text-2xl font-semibold text-gray-900 mb-4">Hi, I&apos;m Wilfredo!</h3>
           <p className="text-gray-700 mb-6">
-            I'm always excited to connect with like-minded professionals and explore new opportunities. Feel free to reach out to me through the following platforms:
+            I&apos;m always excited to connect with like-minded professionals and explore new opportunities. Feel free to reach out to me through the following platforms:
           </p>
           <div className="flex flex-wrap justify-center gap-6 mb-8">
             <div className="flex flex-col items-center w-24">

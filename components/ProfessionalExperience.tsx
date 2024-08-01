@@ -17,7 +17,7 @@ const ProfessionalExperience = () => {
                                 <li>Extended LLM file support to 14 types, integrating multi-modal features with image support.</li>
                                 <li>Developed a backend module for generating exam questions from PDFs using VertexAI, LangChain, and ChromaDB.</li>
                                 <li>Implemented a full-stack system for generating flashcards from YouTube videos using FastAPI, LangChain, and Vite + React.</li>
-                                <li>Optimized Kai's schemas and migrated from VertexAI to GoogleGenerativeAI.</li>
+                                <li>Optimized Kai&apos;s schemas and migrated from VertexAI to GoogleGenerativeAI.</li>
                             </ul>
                             <div className="mt-4 flex flex-wrap justify-center space-x-2">
                                 <img src="/python.png" alt="Python" className="h-10 w-10 object-cover" />
