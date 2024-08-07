@@ -8,7 +8,7 @@ const Projects = () => {
       title: 'Notes Management App',
       description: 'Full-Stack app which supports the notes management with active and archived notes, as well as categories and efficient filters for optimal notes retrievement. It was made using NextJS, NestJS, PostgreSQL, Multi-Stage Build in Docker-Compose, compatibility with Linux/Windows and deployed in Vercel',
       image: '/notesmanagementapp.png',
-      repoLink: 'https://github.com/AaronSosaRamos/AIPPTBuilder',
+      repoLink: 'https://github.com/AaronSosaRamos/NotesManagementApp',
       liveDemoLink: "https://notes-management-app-three.vercel.app/",
       videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
       techImages: ['/nextjs.png', '/nestjs.png', '/postgresql.png', '/docker.png', '/docker-compose.png', '/bash.png', '/vercel.png'],
