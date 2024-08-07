@@ -1,9 +1,19 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Github, Youtube } from 'lucide-react';
+import { Github, Youtube, ExternalLink } from 'lucide-react';
 
 const Projects = () => {
   const projectData = [
+    {
+      title: 'Notes Management App',
+      description: 'Full-Stack app which supports the notes management with active and archived notes, as well as categories and efficient filters for optimal notes retrievement. It was made using NextJS, NestJS, PostgreSQL, Multi-Stage Build in Docker-Compose, compatibility with Linux/Windows and deployed in Vercel',
+      image: '/notesmanagementapp.png',
+      repoLink: 'https://github.com/AaronSosaRamos/AIPPTBuilder',
+      liveDemoLink: "https://notes-management-app-three.vercel.app/",
+      videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
+      techImages: ['/nextjs.png', '/nestjs.png', '/postgresql.png', '/docker.png', '/docker-compose.png', '/bash.png', '/vercel.png'],
+      hasLiveDemo: true
+    },
     {
       title: 'AI PPT Builder',
       description: 'Automates the development of outstanding slides using LangChain, Gradio, GoogleGenerativeAI and ChromaDB. Supports more than 14 different file types (PDF, CSV, TXT, MD, URL, PPTX, DOCX, XLS/XLSX, XML, Google Docs, Google Sheets, Google Slides, Google PDF) and enhances multimodal support for images (PNG, JPG, JPEG).',
@@ -59,7 +69,7 @@ const Projects = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-purple-900 sm:text-4xl lg:text-5xl text-center mb-12">Projects</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
-          {projectData.map((project, index) => (
+          {projectData.map((project, index) => 
             <div key={index} className="bg-white border border-gray-300 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:scale-105 w-full max-w-md">
               <div className="relative h-48 w-full mb-4">
                 <Image
@@ -70,29 +80,37 @@ const Projects = () => {
                   className="rounded-t-lg"
                 />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">{project.title}</h3>
-              <p className="text-gray-600 mb-4">{project.description}</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2 text-center">{project.title}</h3>
+              <p className="text-gray-600 mb-4 text-center">{project.description}</p>
               <div className="flex justify-center flex-wrap space-x-2 mb-4">
                 {project.techImages.map((techImage, index) => (
                   <Image key={index} src={techImage} alt={`Tech ${index + 1}`} width={30} height={30} className="object-contain hover:scale-110 transition-transform duration-300" />
                 ))}
               </div>
-              <div className="flex justify-center space-x-4">
+              <div className="flex flex-col lg:flex-row flex-wrap justify-center items-center max-xl:space-y-2 md:space-x-4 w-full">
+                {project.hasLiveDemo && (
+                  <Link href={project.liveDemoLink} target='_blank'>
+                    <span className="inline-flex items-center justify-center bg-green-600 text-white py-2 px-4 rounded-md text-lg font-medium hover:bg-green-700 transition duration-300 ease-in-out w-full sm:w-auto text-center">
+                      <ExternalLink className="h-5 w-5 mr-2" />
+                      Live Demo
+                    </span>
+                  </Link>
+                )}
                 <Link href={project.repoLink} target='_blank'>
-                  <span className="inline-flex items-center bg-purple-600 text-white py-2 px-4 rounded-md text-lg font-medium hover:bg-purple-700 transition duration-300 ease-in-out">
+                  <span className="inline-flex items-center justify-center bg-purple-600 text-white py-2 px-4 rounded-md text-lg font-medium hover:bg-purple-700 transition duration-300 ease-in-out w-full sm:w-auto text-center">
                     <Github className="h-5 w-5 mr-2" />
                     Repository
                   </span>
                 </Link>
                 <Link href={project.videoLink} target='_blank'>
-                  <span className="inline-flex items-center bg-red-600 text-white py-2 px-4 rounded-md text-lg font-medium hover:bg-red-700 transition duration-300 ease-in-out">
+                  <span className={`inline-flex items-center justify-center bg-red-600 text-white py-2 px-4 rounded-md text-lg font-medium hover:bg-red-700 transition duration-300 ease-in-out w-full sm:w-auto text-center ${project.hasLiveDemo ? 'xl:mt-3' : ''} `}>
                     <Youtube className="h-5 w-5 mr-2" />
                     Video
                   </span>
                 </Link>
               </div>
             </div>
-          ))}
+          )}
         </div>
       </div>
     </div>
