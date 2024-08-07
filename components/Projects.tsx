@@ -23,14 +23,6 @@ const Projects = () => {
       techImages: ['/langchain.png', '/gradio.png', '/vertexai.png', '/chromadb.png']
     },
     {
-      title: 'Kai AI Backend (Open Source)',
-      description: 'Led a multidisciplinary team for extending the file support with more than 14 file types as well as enhancing the multimodal support for images and multilingual support. Additionally, we implemented a worksheet and syllabus generator; and optimized the key concepts retriever with efficient and state-of-art AI pipelines.',
-      image: '/kaiaibackend.png',
-      repoLink: 'https://github.com/radicalxdev/kai-ai-backend',
-      videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
-      techImages: ['/langchain.png', '/gradio.png', '/vertexai.png', '/chromadb.png']
-    },
-    {
       title: 'Email Response Automation with AI',
       description: 'Developed an AI Agent that automates the generation of draft e-mails using LangGraph, CrewAI, Gmail API, and Tavily when the required knowledge is outside of its context scope.',
       image: '/emailresponseautomation.png',
@@ -61,6 +53,14 @@ const Projects = () => {
       repoLink: 'https://github.com/AaronSosaRamos/mission-flights',
       videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
       techImages: ['/langchain.png', '/streamlit.png', '/vertexai.png', '/fastapi.svg', '/sqlite.png', '/uvicorn.png', '/pydantic.png', '/sqlalchemy.png']
+    },
+    {
+      title: 'Kai AI Backend (Open Source)',
+      description: 'Led a multidisciplinary team for extending the file support with more than 14 file types as well as enhancing the multimodal support for images and multilingual support. Additionally, we implemented a worksheet and syllabus generator; and optimized the key concepts retriever with efficient and state-of-art AI pipelines.',
+      image: '/kaiaibackend.png',
+      repoLink: 'https://github.com/radicalxdev/kai-ai-backend',
+      videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
+      techImages: ['/langchain.png', '/gradio.png', '/vertexai.png', '/chromadb.png']
     }
   ];
 
