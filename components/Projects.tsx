@@ -5,6 +5,16 @@ import { Github, Youtube, ExternalLink } from 'lucide-react';
 const Projects = () => {
   const projectData = [
     {
+      title: 'AI Spelling Checker',
+      description: 'Full-Stack app which supports the spelling checking process in a multi-language support for an outstanding guidance and writing improvement process with AI and LLMs. It was made using ReactJS, FastAPI, Google Generative AI and Docker Multi-Stage Build. Deployed in Vercel (Front-end) and Render (Back-end)',
+      image: '/ai-spelling-checker.jpeg',
+      repoLink: 'https://github.com/AaronSosaRamos/ai-spelling-checker-api',
+      liveDemoLink: "https://ai-spelling-checker.vercel.app/",
+      videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
+      techImages: ['/react.png', '/python.png', '/fastapi.svg', '/docker.png', '/vertexai.png', '/vercel.png', '/render.svg'],
+      hasLiveDemo: true
+    },
+    {
       title: 'Notes Management App',
       description: 'Full-Stack app which supports the notes management with active and archived notes, as well as categories and efficient filters for optimal notes retrievement. It was made using NextJS, NestJS, PostgreSQL, Multi-Stage Build in Docker-Compose, compatibility with Linux/Windows and deployed in Vercel',
       image: '/notesmanagementapp.png',
@@ -21,6 +31,16 @@ const Projects = () => {
       repoLink: 'https://github.com/AaronSosaRamos/AIPPTBuilder',
       videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
       techImages: ['/langchain.png', '/gradio.png', '/vertexai.png', '/chromadb.png']
+    },
+    {
+      title: 'Conversors Suite',
+      description: 'App which provides formatting and conversion support for Markdown and JSON content. It was developed using NextJS and deployed in Vercel.',
+      image: '/conversors-suite.png',
+      repoLink: 'https://github.com/AaronSosaRamos/conversors-suite',
+      liveDemoLink: "https://conversors-suite.vercel.app/",
+      videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
+      techImages: ['/nextjs.png', '/vercel.png'],
+      hasLiveDemo: true
     },
     {
       title: 'Email Response Automation with AI',
@@ -69,7 +89,7 @@ const Projects = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-purple-900 sm:text-4xl lg:text-5xl text-center mb-12">Projects</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
-          {projectData.map((project, index) => 
+          {projectData.map((project, index) =>
             <div key={index} className="bg-white border border-gray-300 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:scale-105 w-full max-w-md">
               <div className="relative h-48 w-full mb-4">
                 <Image
