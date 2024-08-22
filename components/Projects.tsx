@@ -77,10 +77,10 @@ const Projects = () => {
       techImages: ['/langchain.png', '/streamlit.png', '/vertexai.png', '/fastapi.svg', '/sqlite.png', '/uvicorn.png', '/pydantic.png', '/sqlalchemy.png']
     },
     {
-      title: 'Kai AI Backend (Open Source)',
+      title: 'Marvel AI Backend (Open Source)',
       description: 'Led a multidisciplinary team for extending the file support with more than 14 file types as well as enhancing the multimodal support for images and multilingual support. Additionally, we implemented a worksheet and syllabus generator; and optimized the key concepts retriever with efficient and state-of-art AI pipelines.',
       image: '/kaiaibackend.png',
-      repoLink: 'https://github.com/radicalxdev/kai-ai-backend',
+      repoLink: 'https://github.com/radicalxdev/marvel-ai-backend',
       videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
       techImages: ['/langchain.png', '/gradio.png', '/vertexai.png', '/chromadb.png'],
       liveDemoLink: "https://kai.radicalai.app/signin/",
