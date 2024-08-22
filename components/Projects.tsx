@@ -25,12 +25,14 @@ const Projects = () => {
       hasLiveDemo: true
     },
     {
-      title: 'AI PPT Builder',
-      description: 'Automates the development of outstanding slides using LangChain, Gradio, GoogleGenerativeAI and ChromaDB. Supports more than 14 different file types (PDF, CSV, TXT, MD, URL, PPTX, DOCX, XLS/XLSX, XML, Google Docs, Google Sheets, Google Slides, Google PDF) and enhances multimodal support for images (PNG, JPG, JPEG).',
-      image: '/aipptbuilder.png',
-      repoLink: 'https://github.com/AaronSosaRamos/AIPPTBuilder',
+      title: 'Gemini Dynamo',
+      description: 'Implemented a full-stack project for automating the retrieval of key concepts from different data types (PDFs, Word, PPTX, Youtube Videos and so forth). For the frontend, used NextJS Tailwind MUI for enhancing UI/UX. For the backend, developed an AI pipeline using FastAPI, LangChain, Vertex AI API, and YouTube transcript API.',
+      image: '/gemini-dynamo.jpeg',
+      repoLink: 'https://github.com/AaronSosaRamos/mission-dynamo',
+      liveDemoLink: "https://gemini-dynamo-frontend.vercel.app/",
       videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
-      techImages: ['/langchain.png', '/gradio.png', '/vertexai.png', '/chromadb.png']
+      techImages: ['/nextjs.png', '/vercel.png', '/langchain.png', '/fastapi.svg', '/vertexai.png', '/render.svg', '/youtube.png'],
+      hasLiveDemo: true
     },
     {
       title: 'Conversors Suite',
@@ -41,6 +43,14 @@ const Projects = () => {
       videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
       techImages: ['/nextjs.png', '/vercel.png'],
       hasLiveDemo: true
+    },
+    {
+      title: 'AI PPT Builder',
+      description: 'Automates the development of outstanding slides using LangChain, Gradio, GoogleGenerativeAI and ChromaDB. Supports more than 14 different file types (PDF, CSV, TXT, MD, URL, PPTX, DOCX, XLS/XLSX, XML, Google Docs, Google Sheets, Google Slides, Google PDF) and enhances multimodal support for images (PNG, JPG, JPEG).',
+      image: '/aipptbuilder.png',
+      repoLink: 'https://github.com/AaronSosaRamos/AIPPTBuilder',
+      videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
+      techImages: ['/langchain.png', '/gradio.png', '/vertexai.png', '/chromadb.png']
     },
     {
       title: 'Email Response Automation with AI',
@@ -59,14 +69,6 @@ const Projects = () => {
       techImages: ['/langchain.png', '/vertexai.png', '/streamlit.png', '/chromadb.png', '/pdf.png']
     },
     {
-      title: 'Gemini Dynamo',
-      description: 'Implemented a full-stack project for automating the retrieval of key concepts from YouTube videos. For the frontend, used React with Vite and MUI for enhancing UI/UX. For the backend, developed an AI pipeline using FastAPI, LangChain, Vertex AI API, and YouTube transcript API.',
-      image: '/mission-dynamo.png',
-      repoLink: 'https://github.com/AaronSosaRamos/mission-dynamo',
-      videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
-      techImages: ['/langchain.png', '/fastapi.svg', '/vertexai.png', '/youtube.png']
-    },
-    {
       title: 'Gemini Flight Manager',
       description: 'Developed an AI agent for automating the process of booking flights. Retrieves info from databases about available flights and books the required flights based on payment criteria. Developed using LangChain, Streamlit UI, Vertex AI API, FastAPI, SQLite, Uvicorn, Pydantic Schema, and SQLAlchemy (ORM).',
       image: '/mission-flights.png',
@@ -75,12 +77,14 @@ const Projects = () => {
       techImages: ['/langchain.png', '/streamlit.png', '/vertexai.png', '/fastapi.svg', '/sqlite.png', '/uvicorn.png', '/pydantic.png', '/sqlalchemy.png']
     },
     {
-      title: 'Kai AI Backend (Open Source)',
+      title: 'Marvel AI Backend (Open Source)',
       description: 'Led a multidisciplinary team for extending the file support with more than 14 file types as well as enhancing the multimodal support for images and multilingual support. Additionally, we implemented a worksheet and syllabus generator; and optimized the key concepts retriever with efficient and state-of-art AI pipelines.',
       image: '/kaiaibackend.png',
-      repoLink: 'https://github.com/radicalxdev/kai-ai-backend',
+      repoLink: 'https://github.com/radicalxdev/marvel-ai-backend',
       videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
-      techImages: ['/langchain.png', '/gradio.png', '/vertexai.png', '/chromadb.png']
+      techImages: ['/langchain.png', '/gradio.png', '/vertexai.png', '/chromadb.png'],
+      liveDemoLink: "https://kai.radicalai.app/signin/",
+      hasLiveDemo: true
     }
   ];
 
