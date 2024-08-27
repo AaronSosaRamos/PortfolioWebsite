@@ -31,7 +31,17 @@ const Projects = () => {
       repoLink: 'https://github.com/AaronSosaRamos/gemini-dynamo-frontend',
       liveDemoLink: "https://gemini-dynamo-frontend.vercel.app/",
       videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
-      techImages: ['/nextjs.png', '/vercel.png', '/langchain.png', '/fastapi.svg', '/vertexai.png', '/render.svg', '/youtube.png'],
+      techImages: ['/nextjs.png', '/vercel.png', '/langchain.png', '/fastapi.svg', '/vertexai.png', '/render.svg'],
+      hasLiveDemo: true
+    },
+    {
+      title: 'Gemini Quizzify',
+      description: 'Implemented an AI pipeline for automating the development of multiple-choice questions based on the RAG approach for retrieving context from different file types like PDF, CSV, Word, Imgs, Youtube Videos and so forth. Utilized NextJS and Vercel for the frontend; and LangChain, Vertex AI API, Streamlit UI, ChromaDB, and PyPDF for the backend.',
+      image: '/gemini-quizzify.png',
+      repoLink: 'https://github.com/AaronSosaRamos/gemini-quizzify-frontend',
+      liveDemoLink: "https://gemini-quizzify-frontend.vercel.app/",
+      videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
+      techImages: ['/nextjs.png', '/vercel.png', '/langchain.png', '/vertexai.png', '/streamlit.png', '/chromadb.png'],
       hasLiveDemo: true
     },
     {
@@ -59,14 +69,6 @@ const Projects = () => {
       repoLink: 'https://github.com/AaronSosaRamos/email-response-automation-with-crewai-langgraph',
       videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
       techImages: ['/langchain.png', '/crewai.png', '/gmail.png', '/tavily.png']
-    },
-    {
-      title: 'Gemini Quizzify',
-      description: 'Implemented an AI pipeline for automating the development of multiple-choice questions based on the RAG approach for retrieving context from PDF files. Utilized LangChain, Vertex AI API, Streamlit UI, ChromaDB, and PyPDF.',
-      image: '/mission-quizzify.png',
-      repoLink: 'https://github.com/AaronSosaRamos/mission-quizify-imp',
-      videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
-      techImages: ['/langchain.png', '/vertexai.png', '/streamlit.png', '/chromadb.png', '/pdf.png']
     },
     {
       title: 'Gemini Flight Manager',
