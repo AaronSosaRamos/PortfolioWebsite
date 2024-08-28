@@ -27,7 +27,7 @@ const Projects = () => {
     {
       title: 'Gemini Dynamo',
       description: 'Implemented a full-stack project for automating the retrieval of key concepts from different data types (PDFs, Word, PPTX, Youtube Videos and so forth). For the frontend, used NextJS Tailwind MUI for enhancing UI/UX. For the backend, developed an AI pipeline using FastAPI, LangChain, Vertex AI API, and YouTube transcript API.',
-      image: '/gemini-dynamo.jpeg',
+      image: '/gemini-dynamo.png',
       repoLink: 'https://github.com/AaronSosaRamos/gemini-dynamo-frontend',
       liveDemoLink: "https://gemini-dynamo-frontend.vercel.app/",
       videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
