@@ -7,17 +7,56 @@ const ProfessionalExperience = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-3xl font-bold text-purple-900 sm:text-4xl lg:text-5xl text-center mb-12">Professional Experience</h2>
                 <div className="mt-8 space-y-12">
+                    {/* AI Product Manager */}
                     <div className="flex flex-col md:flex-row items-center md:items-start md:space-x-8">
                         <div className="md:w-2/3">
-                            <h3 className="text-2xl font-semibold text-gray-900">AI Engineer Intern</h3>
+                            <h3 className="text-2xl font-semibold text-gray-900">AI Product Manager</h3>
+                            <p className="text-gray-600">RadicalAI, New York, USA | August 2024 - Present</p>
+                            <ul className="mt-2 text-gray-600 list-disc list-inside">
+                                <li>Led and managed a multidisciplinary team of AI and software engineers in developing key AI tools.</li>
+                                <li>Oversaw the development of the Multiple Choice Assessment Generator, optimizing the process for educational content.</li>
+                                <li>Directed the implementation of the Key Concept Retriever, enhancing data retrieval from varied file formats.</li>
+                                <li>Managed the design and development of the Worksheet Generator, facilitating diverse educational content creation.</li>
+                                <li>Coordinated the efforts in building the Syllabus Generator, improving curriculum design through AI integration.</li>
+                                <li>Enhanced team collaboration and productivity by introducing agile methodologies and efficient project management tools.</li>
+                            </ul>
+                            <div className="mt-4 flex flex-wrap justify-center space-x-2">
+                                <img src="/product-management.png" alt="Product Management" className="h-10 w-10 object-cover" />
+                                <img src="/agile.png" alt="Agile Methodologies" className="h-10 w-10 object-cover" />
+                                <img src="/python.png" alt="Python" className="h-10 w-10 object-cover" />
+                                <img src="/fastapi.svg" alt="FastAPI" className="h-10 w-10 object-cover" />
+                                <img src="/langchain.png" alt="LangChain" className="h-10 w-14" />
+                                <img src="/vertexai.png" alt="VertexAI" className="h-10 w-10 object-cover" />
+                                <img src="/chromadb.png" alt="ChromaDB" className="h-10 w-10 object-cover" />
+                                <img src="/react.png" alt="React" className="h-10 w-10 object-cover" />
+                                <img src="/vite.png" alt="Vite" className="h-10 w-10 object-cover" />
+                            </div>
+                        </div>
+                        <div className="md:w-1/3 mt-4 md:mt-10 flex justify-center">
+                            <Link href="https://lab.radicalai.app/" target='_blank'>
+                                <Image
+                                    src="/radical-ai.png"
+                                    alt="AI Product Manager"
+                                    layout="responsive"
+                                    width={500}
+                                    height={300}
+                                    className="rounded-lg shadow-lg"
+                                />
+                            </Link>
+                        </div>
+                    </div>
+                    {/* AI Engineer */}
+                    <div className="flex flex-col md:flex-row items-center md:items-start md:space-x-8">
+                        <div className="md:w-2/3">
+                            <h3 className="text-2xl font-semibold text-gray-900">AI Engineer</h3>
                             <p className="text-gray-600">RadicalAI, New York, USA | June 2024 - Present</p>
                             <ul className="mt-2 text-gray-600 list-disc list-inside">
-                                <li>Led development of a worksheet generator with diverse question types, enhancing LLM pipelines with Pydantic schemas and multi-language support.</li>
-                                <li>Created a syllabus generator using MIT papers and reusable design patterns for LLM pipelines.</li>
-                                <li>Extended LLM file support to 14 types, integrating multi-modal features with image support.</li>
-                                <li>Developed a backend module for generating exam questions from PDFs using VertexAI, LangChain, and ChromaDB.</li>
-                                <li>Implemented a full-stack system for generating flashcards from YouTube videos using FastAPI, LangChain, and Vite + React.</li>
-                                <li>Optimized Kai&apos;s schemas and migrated from VertexAI to GoogleGenerativeAI.</li>
+                                <li>Developed a Multiple Choice Assessment Generator to automate question generation with AI.</li>
+                                <li>Implemented a Key Concept Retriever for extracting key concepts from multiple data types.</li>
+                                <li>Created a Worksheet Generator supporting more than 6 different question types, enhancing AI learning capabilities.</li>
+                                <li>Designed and developed a Syllabus Generator leveraging MIT papers and reusable design patterns for LLM pipelines.</li>
+                                <li>Extended LLM file support to 14 types, integrating multi-modal features with image and video support.</li>
+                                <li>Optimized the AI pipelines by migrating from VertexAI to GoogleGenerativeAI for better performance and scalability.</li>
                             </ul>
                             <div className="mt-4 flex flex-wrap justify-center space-x-2">
                                 <img src="/python.png" alt="Python" className="h-10 w-10 object-cover" />
@@ -37,7 +76,7 @@ const ProfessionalExperience = () => {
                             <Link href="https://lab.radicalai.app/" target='_blank'>
                                 <Image
                                     src="/radical-ai.png"
-                                    alt="AI Engineer Intern"
+                                    alt="AI Engineer"
                                     layout="responsive"
                                     width={500}
                                     height={300}
@@ -46,6 +85,7 @@ const ProfessionalExperience = () => {
                             </Link>
                         </div>
                     </div>
+                    {/* Existing Software Engineer experience */}
                     <div className="flex flex-col md:flex-row items-center md:items-start md:space-x-8">
                         <div className="md:w-2/3">
                             <h3 className="text-2xl font-semibold text-gray-900">Software Engineer</h3>
@@ -93,6 +133,7 @@ const ProfessionalExperience = () => {
                             </Link>
                         </div>
                     </div>
+                    {/* Existing Software Engineer Intern experience */}
                     <div className="flex flex-col md:flex-row items-center md:items-start md:space-x-8">
                         <div className="md:w-2/3">
                             <h3 className="text-2xl font-semibold text-gray-900">Software Engineer Intern</h3>

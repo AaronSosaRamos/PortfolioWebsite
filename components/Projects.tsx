@@ -5,6 +5,16 @@ import { Github, Youtube, ExternalLink } from 'lucide-react';
 const Projects = () => {
   const projectData = [
     {
+      "title": "AI Code and DS Assistant",
+      "description": "Developed a full-stack application that serves as an assistant for code generation and data structure (DS) learning. It supports users in generating code snippets, understanding various data structures like Arrays, Linked Lists, Stacks, Queues, Binary Trees, and Graphs, and provides interactive learning modules powered by AI. Built using NextJS for the frontend and FastAPI for the backend, with AI capabilities integrated via Google Generative AI and LangChain.",
+      "image": "/ai-code-ds-assistant.png",
+      "repoLink": "https://github.com/AaronSosaRamos/ai-code-ds-assistant-frontend",
+      "liveDemoLink": "https://ai-code-ds-assistant-frontend.vercel.app/",
+      "videoLink": "https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ",
+      "techImages": ["/nextjs.png", "/vercel.png", "/python.png", '/docker.png', "/fastapi.svg", "/vertexai.png", "/langchain.png", '/render.svg'],
+      "hasLiveDemo": true
+    },    
+    {
       title: 'AI Spelling Checker',
       description: 'Full-Stack app which supports the spelling checking process in a multi-language support for an outstanding guidance and writing improvement process with AI and LLMs. It was made using ReactJS, FastAPI, Google Generative AI and Docker Multi-Stage Build. Deployed in Vercel (Front-end) and Render (Back-end)',
       image: '/ai-spelling-checker.jpeg',
@@ -15,23 +25,13 @@ const Projects = () => {
       hasLiveDemo: true
     },
     {
-      title: 'Notes Management App',
-      description: 'Full-Stack app which supports the notes management with active and archived notes, as well as categories and efficient filters for optimal notes retrievement. It was made using NextJS, NestJS, PostgreSQL, Multi-Stage Build in Docker-Compose, compatibility with Linux/Windows and deployed in Vercel',
-      image: '/notesmanagementapp.png',
-      repoLink: 'https://github.com/AaronSosaRamos/NotesManagementApp',
-      liveDemoLink: "https://notes-management-app-three.vercel.app/",
-      videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
-      techImages: ['/nextjs.png', '/nestjs.png', '/postgresql.png', '/docker.png', '/docker-compose.png', '/bash.png', '/vercel.png'],
-      hasLiveDemo: true
-    },
-    {
       title: 'Gemini Dynamo',
       description: 'Implemented a full-stack project for automating the retrieval of key concepts from different data types (PDFs, Word, PPTX, Youtube Videos and so forth). For the frontend, used NextJS Tailwind MUI for enhancing UI/UX. For the backend, developed an AI pipeline using FastAPI, LangChain, Vertex AI API, and YouTube transcript API.',
       image: '/gemini-dynamo.png',
       repoLink: 'https://github.com/AaronSosaRamos/gemini-dynamo-frontend',
       liveDemoLink: "https://gemini-dynamo-frontend.vercel.app/",
       videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
-      techImages: ['/nextjs.png', '/vercel.png', '/langchain.png', '/fastapi.svg', '/vertexai.png', '/render.svg'],
+      techImages: ['/nextjs.png', '/vercel.png', '/langchain.png', '/docker.png', '/fastapi.svg', '/vertexai.png', '/render.svg'],
       hasLiveDemo: true
     },
     {
@@ -41,7 +41,7 @@ const Projects = () => {
       repoLink: 'https://github.com/AaronSosaRamos/gemini-quizzify-frontend',
       liveDemoLink: "https://gemini-quizzify-frontend.vercel.app/",
       videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
-      techImages: ['/nextjs.png', '/vercel.png', '/langchain.png', '/vertexai.png', '/streamlit.png', '/chromadb.png'],
+      techImages: ['/nextjs.png', '/vercel.png', '/langchain.png', '/vertexai.png', '/docker.png', '/streamlit.png', '/chromadb.png', '/render.svg'],
       hasLiveDemo: true
     },
     {
@@ -52,6 +52,16 @@ const Projects = () => {
       liveDemoLink: "https://conversors-suite.vercel.app/",
       videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
       techImages: ['/nextjs.png', '/vercel.png'],
+      hasLiveDemo: true
+    },
+    {
+      title: 'Notes Management App',
+      description: 'Full-Stack app which supports the notes management with active and archived notes, as well as categories and efficient filters for optimal notes retrievement. It was made using NextJS, NestJS, PostgreSQL, Multi-Stage Build in Docker-Compose, compatibility with Linux/Windows and deployed in Vercel',
+      image: '/notesmanagementapp.png',
+      repoLink: 'https://github.com/AaronSosaRamos/NotesManagementApp',
+      liveDemoLink: "https://notes-management-app-three.vercel.app/",
+      videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
+      techImages: ['/nextjs.png', '/nestjs.png', '/postgresql.png', '/docker.png', '/docker-compose.png', '/bash.png', '/vercel.png'],
       hasLiveDemo: true
     },
     {
