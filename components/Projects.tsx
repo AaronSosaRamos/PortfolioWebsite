@@ -15,23 +15,13 @@ const Projects = () => {
       "hasLiveDemo": true
     },    
     {
-      title: 'AI Spelling Checker',
-      description: 'Full-Stack app which supports the spelling checking process in a multi-language support for an outstanding guidance and writing improvement process with AI and LLMs. It was made using ReactJS, FastAPI, Google Generative AI and Docker Multi-Stage Build. Deployed in Vercel (Front-end) and Render (Back-end)',
-      image: '/ai-spelling-checker.jpeg',
-      repoLink: 'https://github.com/AaronSosaRamos/ai-spelling-checker-api',
-      liveDemoLink: "https://ai-spelling-checker.vercel.app/",
+      title: "AI Writing Services",
+      description: "Full-Stack app offering a comprehensive suite of writing tools powered by AI and LLMs. This application supports multi-language spelling checks, writing enhancement, addition of connectors, textual tone shifts, and plagiarism checks to provide exceptional guidance and writing improvement. Built with ReactJS, FastAPI, Google Generative AI, and Docker Multi-Stage Build. Deployed on Vercel (Front-end) and Render (Back-end) for seamless performance and accessibility.",
+      image: "/ai-writing-services.jpeg",
+      repoLink: 'https://github.com/AaronSosaRamos/ai-writing-services-frontend',
+      liveDemoLink: "https://ai-writing-services.vercel.app/",
       videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
       techImages: ['/react.png', '/python.png', '/fastapi.svg', '/docker.png', '/vertexai.png', '/vercel.png', '/render.svg'],
-      hasLiveDemo: true
-    },
-    {
-      title: 'Gemini Dynamo',
-      description: 'Implemented a full-stack project for automating the retrieval of key concepts from different data types (PDFs, Word, PPTX, Youtube Videos and so forth). For the frontend, used NextJS Tailwind MUI for enhancing UI/UX. For the backend, developed an AI pipeline using FastAPI, LangChain, Vertex AI API, and YouTube transcript API.',
-      image: '/gemini-dynamo.png',
-      repoLink: 'https://github.com/AaronSosaRamos/gemini-dynamo-frontend',
-      liveDemoLink: "https://gemini-dynamo-frontend.vercel.app/",
-      videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
-      techImages: ['/nextjs.png', '/vercel.png', '/langchain.png', '/docker.png', '/fastapi.svg', '/vertexai.png', '/render.svg'],
       hasLiveDemo: true
     },
     {
@@ -42,6 +32,16 @@ const Projects = () => {
       liveDemoLink: "https://gemini-quizzify-frontend.vercel.app/",
       videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
       techImages: ['/nextjs.png', '/vercel.png', '/langchain.png', '/vertexai.png', '/docker.png', '/streamlit.png', '/chromadb.png', '/render.svg'],
+      hasLiveDemo: true
+    },
+    {
+      title: 'Gemini Dynamo',
+      description: 'Implemented a full-stack project for automating the retrieval of key concepts from different data types (PDFs, Word, PPTX, Youtube Videos and so forth). For the frontend, used NextJS Tailwind MUI for enhancing UI/UX. For the backend, developed an AI pipeline using FastAPI, LangChain, Vertex AI API, and YouTube transcript API.',
+      image: '/gemini-dynamo.png',
+      repoLink: 'https://github.com/AaronSosaRamos/gemini-dynamo-frontend',
+      liveDemoLink: "https://gemini-dynamo-frontend.vercel.app/",
+      videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
+      techImages: ['/nextjs.png', '/vercel.png', '/langchain.png', '/docker.png', '/fastapi.svg', '/vertexai.png', '/render.svg'],
       hasLiveDemo: true
     },
     {
