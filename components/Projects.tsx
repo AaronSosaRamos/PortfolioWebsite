@@ -27,7 +27,7 @@ const Projects = () => {
     {
       title: 'Gemini Quizzify',
       description: 'Implemented an AI pipeline for automating the development of multiple-choice questions based on the RAG approach for retrieving context from different file types like PDF, CSV, Word, Imgs, Youtube Videos and so forth. Utilized NextJS and Vercel for the frontend; and LangChain, Vertex AI API, Streamlit UI, ChromaDB, and PyPDF for the backend.',
-      image: '/gemini-quizzify.png',
+      image: '/ai-gemini-quizzify.jpeg',
       repoLink: 'https://github.com/AaronSosaRamos/gemini-quizzify-frontend',
       liveDemoLink: "https://gemini-quizzify-frontend.vercel.app/",
       videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
@@ -37,7 +37,7 @@ const Projects = () => {
     {
       title: 'Gemini Dynamo',
       description: 'Implemented a full-stack project for automating the retrieval of key concepts from different data types (PDFs, Word, PPTX, Youtube Videos and so forth). For the frontend, used NextJS Tailwind MUI for enhancing UI/UX. For the backend, developed an AI pipeline using FastAPI, LangChain, Vertex AI API, and YouTube transcript API.',
-      image: '/gemini-dynamo.png',
+      image: '/ai-gemini-dynamo.jpeg',
       repoLink: 'https://github.com/AaronSosaRamos/gemini-dynamo-frontend',
       liveDemoLink: "https://gemini-dynamo-frontend.vercel.app/",
       videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
