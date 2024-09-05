@@ -26,7 +26,7 @@ const Projects = () => {
     },
     {
       title: 'Gemini Quizzify',
-      description: 'Implemented an AI pipeline for automating the development of multiple-choice questions based on the RAG approach for retrieving context from different file types like PDF, CSV, Word, Imgs, Youtube Videos and so forth. Utilized NextJS and Vercel for the frontend; and LangChain, Vertex AI API, Streamlit UI, ChromaDB, and PyPDF for the backend.',
+      description: 'Implemented an AI-driven pipeline to automate the creation of various question types, including "Fill in the Blank", "Open Ended", "True/False", "Multiple Choice", "Relate Concepts", and "Math Exercises". The pipeline leverages the RAG (Retrieval-Augmented Generation) approach to extract context from diverse file formats such as PDFs, CSVs, Word documents, images, and YouTube videos. The frontend was built using NextJS and deployed on Vercel, while the backend integrated advanced technologies like LangChain, Vertex AI API, Streamlit UI, ChromaDB, and PyPDF to ensure robust question generation and efficient handling of different data sources.',
       image: '/ai-gemini-quizzify.jpeg',
       repoLink: 'https://github.com/AaronSosaRamos/gemini-quizzify-frontend',
       liveDemoLink: "https://gemini-quizzify-frontend.vercel.app/",
