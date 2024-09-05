@@ -6,7 +6,7 @@ const Projects = () => {
   const projectData = [
     {
       "title": "AI Code and DS Assistant",
-      "description": "Developed a full-stack application that serves as an assistant for code generation and data structure (DS) learning. It supports users in generating code snippets, understanding various data structures like Arrays, Linked Lists, Stacks, Queues, Binary Trees, and Graphs, and provides interactive learning modules powered by AI. Built using NextJS for the frontend and FastAPI for the backend, with AI capabilities integrated via Google Generative AI and LangChain.",
+      "description": "Developed a full-stack application designed to assist with code generation and learning of data structures (DS). The application enables users to generate code snippets and offers in-depth understanding of various data structures, including Arrays, Linked Lists, Stacks, Queues, Binary Trees, and Graphs. It features interactive learning modules powered by AI to enhance the educational experience. The frontend was built using NextJS, while the backend leveraged FastAPI, with AI capabilities integrated through Google Generative AI and LangChain for dynamic and intelligent content delivery.",
       "image": "/ai-code-ds-assistant.png",
       "repoLink": "https://github.com/AaronSosaRamos/ai-code-ds-assistant-frontend",
       "liveDemoLink": "https://ai-code-ds-assistant-frontend.vercel.app/",
@@ -16,7 +16,7 @@ const Projects = () => {
     },    
     {
       title: "AI Writing Services",
-      description: "Full-Stack app offering a comprehensive suite of writing tools powered by AI and LLMs. This application supports multi-language spelling checks, writing enhancement, addition of connectors, textual tone shifts, and plagiarism checks to provide exceptional guidance and writing improvement. Built with ReactJS, FastAPI, Google Generative AI, and Docker Multi-Stage Build. Deployed on Vercel (Front-end) and Render (Back-end) for seamless performance and accessibility.",
+      description: "Developed a full-stack application that provides a comprehensive suite of AI-powered writing tools. The application supports multi-language spelling checks, writing enhancement suggestions, addition of connectors for better flow, textual tone adjustments, and plagiarism detection to deliver superior writing assistance and improvement. Built using ReactJS for the frontend and FastAPI for the backend, the application leverages Google Generative AI and LLMs to offer intelligent, real-time feedback and guidance. The solution was deployed with a Docker Multi-Stage Build, ensuring robust performance, and was hosted on Vercel (frontend) and Render (backend).",
       image: "/ai-writing-services.jpeg",
       repoLink: 'https://github.com/AaronSosaRamos/ai-writing-services-frontend',
       liveDemoLink: "https://ai-writing-services.vercel.app/",
