@@ -6,12 +6,12 @@ const Projects = () => {
   const projectData = [
     {
       "title": "AI Code and DS Assistant",
-      "description": "Developed a full-stack application designed to assist with code generation and learning of data structures (DS). The application enables users to generate code snippets and offers in-depth understanding of various data structures, including Arrays, Linked Lists, Stacks, Queues, Binary Trees, and Graphs. It features interactive learning modules powered by AI to enhance the educational experience. The frontend was built using NextJS, while the backend leveraged FastAPI, with AI capabilities integrated through Google Generative AI and LangChain for dynamic and intelligent content delivery.",
+      "description": "Developed a full-stack application designed to assist with three key services: Code Assistance (Chatbot), Data Structures (Documentation), and NexaMind (AI Assistant for Software Architecture). The application enables users to generate code snippets and offers in-depth understanding of various data structures, including Arrays, Linked Lists, Stacks, Queues, Binary Trees, and Graphs. It features interactive learning modules powered by AI to enhance the educational experience. The frontend was built using NextJS, while the backend leveraged FastAPI, with AI capabilities integrated through multimodal LLMs, LangGraph with complex graphs, and the coexistence of GPT-4o-mini and Google Gemini for dynamic and intelligent content delivery.",
       "image": "/ai-code-ds-assistant.png",
       "repoLink": "https://github.com/AaronSosaRamos/ai-code-ds-assistant-frontend",
       "liveDemoLink": "https://ai-code-ds-assistant-frontend.vercel.app/",
       "videoLink": "https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ",
-      "techImages": ["/nextjs.png", "/vercel.png", "/python.png", '/docker.png', "/fastapi.svg", "/vertexai.png", "/langchain.png", '/render.svg'],
+      "techImages": ["/nextjs.png", "/react.png", "/vercel.png", "/redux.png", "/python.png", '/docker.png', "/fastapi.svg", "/vertexai.png", "/openai.png", "/langchain.png", "/google.png", '/render.svg'],
       "hasLiveDemo": true
     },    
     {
