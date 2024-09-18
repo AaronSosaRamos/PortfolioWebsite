@@ -16,12 +16,12 @@ const Projects = () => {
     },    
     {
       title: "AI Writing Services",
-      description: "Developed a full-stack application that provides a comprehensive suite of AI-powered writing tools. The application supports multi-language spelling checks, writing enhancement suggestions, addition of connectors for better flow, textual tone adjustments, and plagiarism detection to deliver superior writing assistance and improvement. Built using ReactJS for the frontend and FastAPI for the backend, the application leverages Google Generative AI and LLMs to offer intelligent, real-time feedback and guidance. The solution was deployed with a Docker Multi-Stage Build, ensuring robust performance, and was hosted on Vercel (frontend) and Render (backend).",
+      description: "Developed a full-stack application that provides a comprehensive suite of AI-powered writing tools with LangGraph. The application supports multi-language spelling checks, writing enhancement suggestions, addition of connectors for better flow, textual tone adjustments, and plagiarism detection to deliver superior writing assistance and improvement. Built using ReactJS for the frontend and FastAPI for the backend, the application leverages Google Generative AI and LLMs to offer intelligent, real-time feedback and guidance. The solution was deployed with a Docker Multi-Stage Build, ensuring robust performance, and was hosted on Vercel (frontend) and Render (backend).",
       image: "/ai-writing-services.jpeg",
       repoLink: 'https://github.com/AaronSosaRamos/ai-writing-services-frontend',
       liveDemoLink: "https://ai-writing-services.vercel.app/",
       videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
-      techImages: ['/react.png', '/python.png', '/fastapi.svg', '/docker.png', '/vertexai.png', '/vercel.png', '/render.svg'],
+      techImages: ['/react.png', '/python.png', '/fastapi.svg', '/docker.png', '/vertexai.png', "/openai.png", "/langchain.png", "/google.png", '/vercel.png', '/render.svg'],
       hasLiveDemo: true
     },
     {
@@ -46,12 +46,12 @@ const Projects = () => {
     },
     {
       title: 'Conversors Suite',
-      description: 'App which provides formatting and conversion support for Markdown and JSON content. It was developed using NextJS and deployed in Vercel.',
+      description: "Developed a full-stack application offering a range of AI-powered formatting and conversion tools, including Markdown Conversor, JSON Formatter, JSON to SQL, XML to SQL, Math Formulas to LaTeX, Translation, Info to Table, and Image Transcription. Built using NextJS for the frontend and FastAPI for the backend, it integrates LangChain for model orchestration and utilizes Google Generative AI and OpenAI for high-performance processing. The application was benchmarked for speed and accuracy, delivering optimized results. Deployed on Vercel with seamless performance and scalability for complex data transformations.",
       image: '/conversors-suite.png',
       repoLink: 'https://github.com/AaronSosaRamos/conversors-suite',
       liveDemoLink: "https://conversors-suite.vercel.app/",
       videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
-      techImages: ['/nextjs.png', '/vercel.png'],
+      techImages: ['/nextjs.png', '/vercel.png', '/python.png', '/fastapi.svg', '/langchain.png', '/vertexai.png', "/openai.png", "/google.png", '/docker.png', '/render.svg'],
       hasLiveDemo: true
     },
     {
