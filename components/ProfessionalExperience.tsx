@@ -5,7 +5,9 @@ const ProfessionalExperience = () => {
   return (
     <div className="bg-gray-100 dark:bg-gray-800 py-16 sm:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-purple-900 dark:text-purple-400 sm:text-4xl lg:text-5xl text-center mb-12">Professional Experience</h2>
+        <h2 className="text-3xl font-bold text-purple-900 dark:text-purple-400 sm:text-4xl lg:text-5xl text-center mb-12">
+          Professional Experience
+        </h2>
         <div className="mt-8 space-y-12">
           <div className="flex flex-col md:flex-row items-center md:items-start md:space-x-8">
             <div className="md:w-2/3">
@@ -32,14 +34,22 @@ const ProfessionalExperience = () => {
               </div>
             </div>
             <div className="md:w-1/3 mt-4 md:mt-10 flex justify-center">
-              <Link href="https://lab.radicalai.app/" target='_blank'>
+              <Link href="https://lab.radicalai.app/" target="_blank">
                 <Image
                   src="/radical-ai.png"
                   alt="AI Product Manager"
                   layout="responsive"
                   width={500}
                   height={300}
-                  className="rounded-lg shadow-lg"
+                  className="rounded-lg shadow-lg dark:hidden"
+                />
+                <Image
+                  src="/radical-ai-dark.png"
+                  alt="AI Product Manager Dark Mode"
+                  layout="responsive"
+                  width={500}
+                  height={300}
+                  className="rounded-lg shadow-lg hidden dark:block"
                 />
               </Link>
             </div>
@@ -72,14 +82,22 @@ const ProfessionalExperience = () => {
               </div>
             </div>
             <div className="md:w-1/3 mt-4 md:mt-10 flex justify-center">
-              <Link href="https://lab.radicalai.app/" target='_blank'>
+              <Link href="https://lab.radicalai.app/" target="_blank">
                 <Image
                   src="/radical-ai.png"
                   alt="AI Engineer"
                   layout="responsive"
                   width={500}
                   height={300}
-                  className="rounded-lg shadow-lg"
+                  className="rounded-lg shadow-lg dark:hidden"
+                />
+                <Image
+                  src="/radical-ai-dark.png"
+                  alt="AI Engineer Dark Mode"
+                  layout="responsive"
+                  width={500}
+                  height={300}
+                  className="rounded-lg shadow-lg hidden dark:block"
                 />
               </Link>
             </div>
@@ -120,14 +138,22 @@ const ProfessionalExperience = () => {
               </div>
             </div>
             <div className="md:w-1/3 mt-4 md:mt-10 flex justify-center">
-              <Link href="https://www.boushtech.com/" target='_blank'>
+              <Link href="https://www.boushtech.com/" target="_blank">
                 <Image
                   src="/boushtech.png"
                   alt="Software Engineer"
                   layout="responsive"
                   width={500}
                   height={300}
-                  className="rounded-lg shadow-lg"
+                  className="rounded-lg shadow-lg dark:hidden"
+                />
+                <Image
+                  src="/boushtech-dark.png"
+                  alt="Software Engineer Dark Mode"
+                  layout="responsive"
+                  width={500}
+                  height={300}
+                  className="rounded-lg shadow-lg hidden dark:block"
                 />
               </Link>
             </div>
@@ -154,14 +180,22 @@ const ProfessionalExperience = () => {
               </div>
             </div>
             <div className="md:w-1/3 mt-4 md:mt-10 flex justify-center">
-              <Link href="https://www.boushtech.com/" target='_blank'>
+              <Link href="https://www.boushtech.com/" target="_blank">
                 <Image
                   src="/boushtech.png"
                   alt="Software Engineer Intern"
                   layout="responsive"
                   width={500}
                   height={300}
-                  className="rounded-lg shadow-lg w-full h-full"
+                  className="rounded-lg shadow-lg dark:hidden"
+                />
+                <Image
+                  src="/boushtech-dark.png"
+                  alt="Software Engineer Intern Dark Mode"
+                  layout="responsive"
+                  width={500}
+                  height={300}
+                  className="rounded-lg shadow-lg hidden dark:block"
                 />
               </Link>
             </div>
