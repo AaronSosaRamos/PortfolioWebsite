@@ -1,9 +1,10 @@
 import Link from 'next/link';
-import { useState } from 'react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { useState, useEffect } from 'react';
+import { Bars3Icon, XMarkIcon, SunIcon, MoonIcon } from '@heroicons/react/24/outline';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -12,10 +13,32 @@ const Navbar: React.FC = () => {
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
     e.preventDefault();
     document.querySelector(targetId)?.scrollIntoView({
-      behavior: 'smooth'
+      behavior: 'smooth',
     });
     setIsOpen(false);
   };
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+    if (!isDarkMode) {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    }
+  };
+
+  useEffect(() => {
+    const theme = localStorage.getItem('theme');
+    if (theme === 'dark') {
+      setIsDarkMode(true);
+      document.documentElement.classList.add('dark');
+    } else {
+      setIsDarkMode(false);
+      document.documentElement.classList.remove('dark');
+    }
+  }, []);
 
   return (
     <nav className="bg-gradient-to-r from-purple-800 to-black fixed w-full z-10 top-0 shadow-lg">
@@ -30,42 +53,54 @@ const Navbar: React.FC = () => {
               </a>
             </div>
           </div>
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
-              <a href="/#experience" onClick={(e) => handleLinkClick(e, '#experience')}>
-                <span className="text-gray-300 hover:bg-purple-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer transition duration-300 ease-in-out">
-                  Experience
-                </span>
-              </a>
-              <a href="/#projects" onClick={(e) => handleLinkClick(e, '#projects')}>
-                <span className="text-gray-300 hover:bg-purple-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer transition duration-300 ease-in-out">
-                  Projects
-                </span>
-              </a>
-              <a href="/#repositories" onClick={(e) => handleLinkClick(e, '#repositories')}>
-                <span className="text-gray-300 hover:bg-purple-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer transition duration-300 ease-in-out">
-                  Repositories
-                </span>
-              </a>
-              <a href="/#repositories" onClick={(e) => handleLinkClick(e, '#courses')}>
-                <span className="text-gray-300 hover:bg-purple-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer transition duration-300 ease-in-out">
-                  Courses
-                </span>
-              </a>
-              <Link href="/#researches" onClick={(e) => handleLinkClick(e, '#researches')}>
-                <span className="text-gray-300 hover:bg-purple-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer transition duration-300 ease-in-out">
-                  Researches
-                </span>
-              </Link>
-              <Link href="/#contact" onClick={(e) => handleLinkClick(e, '#contact')}>
-                <span className="text-gray-300 hover:bg-purple-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer transition duration-300 ease-in-out">
-                  Contact
-                </span>
-              </Link>
-            </div>
+
+          {/* Sección del menú y toggle alineados */}
+          <div className="hidden md:flex items-center space-x-4">
+            <a href="/#experience" onClick={(e) => handleLinkClick(e, '#experience')}>
+              <span className="text-gray-300 hover:bg-purple-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer transition duration-300 ease-in-out">
+                Experience
+              </span>
+            </a>
+            <a href="/#projects" onClick={(e) => handleLinkClick(e, '#projects')}>
+              <span className="text-gray-300 hover:bg-purple-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer transition duration-300 ease-in-out">
+                Projects
+              </span>
+            </a>
+            <a href="/#repositories" onClick={(e) => handleLinkClick(e, '#repositories')}>
+              <span className="text-gray-300 hover:bg-purple-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer transition duration-300 ease-in-out">
+                Repositories
+              </span>
+            </a>
+            <a href="/#courses" onClick={(e) => handleLinkClick(e, '#courses')}>
+              <span className="text-gray-300 hover:bg-purple-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer transition duration-300 ease-in-out">
+                Courses
+              </span>
+            </a>
+            <Link href="/#researches" onClick={(e) => handleLinkClick(e, '#researches')}>
+              <span className="text-gray-300 hover:bg-purple-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer transition duration-300 ease-in-out">
+                Researches
+              </span>
+            </Link>
+            <Link href="/#contact" onClick={(e) => handleLinkClick(e, '#contact')}>
+              <span className="text-gray-300 hover:bg-purple-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer transition duration-300 ease-in-out">
+                Contact
+              </span>
+            </Link>
+
+            {/* Toggle Dark Mode Alineado */}
+            <button
+              onClick={toggleDarkMode}
+              className="text-gray-300 hover:text-white focus:outline-none ml-4"
+            >
+              {isDarkMode ? <SunIcon className="h-6 w-6" /> : <MoonIcon className="h-6 w-6" />}
+            </button>
           </div>
+
           <div className="mr-2 flex md:hidden">
-            <button onClick={toggleMenu} className="text-gray-300 hover:text-white focus:outline-none focus:text-white">
+            <button
+              onClick={toggleMenu}
+              className="text-gray-300 hover:text-white focus:outline-none focus:text-white"
+            >
               {isOpen ? (
                 <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
               ) : (
@@ -75,9 +110,12 @@ const Navbar: React.FC = () => {
           </div>
         </div>
       </div>
+
+      {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            {/* Links del menú móvil */}
             <a href="/#experience" onClick={(e) => handleLinkClick(e, '#experience')}>
               <span className="text-gray-300 hover:bg-purple-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium cursor-pointer transition duration-300 ease-in-out">
                 Experience
@@ -93,7 +131,7 @@ const Navbar: React.FC = () => {
                 Repositories
               </span>
             </a>
-            <a href="/#repositories" onClick={(e) => handleLinkClick(e, '#courses')}>
+            <a href="/#courses" onClick={(e) => handleLinkClick(e, '#courses')}>
               <span className="text-gray-300 hover:bg-purple-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium cursor-pointer transition duration-300 ease-in-out">
                 Courses
               </span>
@@ -108,6 +146,16 @@ const Navbar: React.FC = () => {
                 Contact
               </span>
             </Link>
+            
+            {/* Toggle Dark Mode para móvil */}
+            <div className="mt-4 flex justify-center">
+              <button
+                onClick={toggleDarkMode}
+                className="text-gray-300 hover:text-white focus:outline-none"
+              >
+                {isDarkMode ? <SunIcon className="h-6 w-6" /> : <MoonIcon className="h-6 w-6" />}
+              </button>
+            </div>
           </div>
         </div>
       )}
