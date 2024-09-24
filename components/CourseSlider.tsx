@@ -67,19 +67,19 @@ const CoursesSlider = () => {
   };
 
   return (
-    <div className="relative w-full bg-gradient-to-r from-gray-200 to-gray-300 py-16 sm:py-24">
+    <div className="relative w-full bg-gradient-to-r from-gray-200 to-gray-300 dark:from-gray-800 dark:to-gray-700 py-16 sm:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-purple-900 sm:text-4xl lg:text-5xl text-center mb-12">Courses</h2>
+        <h2 className="text-3xl font-bold text-purple-900 dark:text-purple-400 sm:text-4xl lg:text-5xl text-center mb-12">Courses</h2>
         <div className="relative overflow-hidden">
           <div className="flex transition-transform duration-300 ease-in-out" style={{ transform: `translateX(-${current * 100}%)` }}>
             {coursesData.map((course, index) => (
               <div key={index} className="min-w-full flex-shrink-0 p-2 sm:p-8 lg:p-16">
-                <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6 lg:p-8 max-w-xs sm:max-w-sm lg:max-w-3xl mx-auto">
+                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4 sm:p-6 lg:p-8 max-w-xs sm:max-w-sm lg:max-w-3xl mx-auto">
                   <div className="relative h-48 w-full mb-4">
                     <Image src={course.image} alt={course.title} layout="fill" objectFit="cover" className="rounded-lg" />
                   </div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2 text-center">{course.title}</h3>
-                  <p className="text-gray-700 mb-4 text-center">{course.description}</p>
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2 text-center">{course.title}</h3>
+                  <p className="text-gray-700 dark:text-gray-300 mb-4 text-center">{course.description}</p>
                   <div className="flex justify-center space-x-4 flex-wrap mb-4">
                     {course.institutionImages.map((institutionImage, index) => (
                       <Image key={index} src={institutionImage} alt={`Institution ${index + 1}`} width={50} height={50} className="object-contain" />
@@ -87,13 +87,13 @@ const CoursesSlider = () => {
                   </div>
                   <div className="flex justify-center space-x-4 flex-wrap">
                     <Link href={course.repoLink} target='_blank'>
-                      <span className="inline-flex items-center bg-purple-600 text-white py-2 px-4 rounded-md text-lg font-medium hover:bg-purple-700 transition duration-300 ease-in-out">
+                      <span className="inline-flex items-center bg-purple-600 dark:bg-purple-700 text-white py-2 px-4 rounded-md text-lg font-medium hover:bg-purple-700 dark:hover:bg-purple-600 transition duration-300 ease-in-out">
                         <Github className="h-5 w-5 mr-2" />
                         Repository
                       </span>
                     </Link>
                     <Link href={course.videoLink} target='_blank'>
-                      <span className="inline-flex items-center bg-red-600 text-white py-2 px-4 rounded-md text-lg font-medium hover:bg-red-700 transition duration-300 ease-in-out">
+                      <span className="inline-flex items-center bg-red-600 dark:bg-red-700 text-white py-2 px-4 rounded-md text-lg font-medium hover:bg-red-700 dark:hover:bg-red-600 transition duration-300 ease-in-out">
                         <Youtube className="h-5 w-5 mr-2" />
                         Video
                       </span>
@@ -103,11 +103,11 @@ const CoursesSlider = () => {
               </div>
             ))}
           </div>
-          <button onClick={prevSlide} className="absolute top-1/2 transform -translate-y-1/2 left-2 bg-white p-2 rounded-full shadow-lg hover:bg-gray-200 transition duration-300 ease-in-out">
-            <FaChevronLeft className="text-black" />
+          <button onClick={prevSlide} className="absolute top-1/2 transform -translate-y-1/2 left-2 bg-white dark:bg-gray-900 p-2 rounded-full shadow-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition duration-300 ease-in-out">
+            <FaChevronLeft className="text-black dark:text-white" />
           </button>
-          <button onClick={nextSlide} className="absolute top-1/2 transform -translate-y-1/2 right-2 bg-white p-2 rounded-full shadow-lg hover:bg-gray-200 transition duration-300 ease-in-out">
-            <FaChevronRight className="text-black" />
+          <button onClick={nextSlide} className="absolute top-1/2 transform -translate-y-1/2 right-2 bg-white dark:bg-gray-900 p-2 rounded-full shadow-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition duration-300 ease-in-out">
+            <FaChevronRight className="text-black dark:text-white" />
           </button>
         </div>
       </div>
@@ -116,3 +116,6 @@ const CoursesSlider = () => {
 };
 
 export default CoursesSlider;
+
+
+
