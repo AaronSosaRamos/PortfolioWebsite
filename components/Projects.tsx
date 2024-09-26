@@ -13,7 +13,7 @@ const Projects = () => {
       "videoLink": "https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ",
       "techImages": ["/nextjs.png", "/react.png", "/vercel.png", "/redux.png", "/python.png", '/docker.png', "/fastapi.svg", "/vertexai.png", "/openai.png", "/langchain.png", "/google.png", '/render.svg'],
       "hasLiveDemo": true
-    },    
+    },
     {
       title: "LLMHub",
       description: "Developed a cutting-edge platform that consolidates comprehensive and practical knowledge about Large Language Models (LLMs). The platform covers various dimensions, including Fundamentals, Prompt Engineering, Retrieval-Augmented Generation (RAG), Fine-Tuning, Model Deployment, Multimodal Models, and Security. It also offers real-world implementations using top-tier models like Google Generative AI, GPT-4o, and Claude Haiku. Users can explore interactive examples to understand how these principles are applied in practice, enhancing their grasp of modern AI techniques. The frontend was built with NextJS, while advanced AI capabilities are integrated through LangChain and state-of-the-art APIs.",
@@ -65,6 +65,26 @@ const Projects = () => {
       hasLiveDemo: true,
     },
     {
+      "title": "ReplyGen",
+      "description": "ReplyGen is an AI agent built to automate the generation of draft emails. By leveraging LangGraph, CrewAI, Gmail API, and Tavily, ReplyGen provides robust email generation and can pull relevant context when required knowledge falls outside the agent's scope. It uses the RAPTOR framework for advanced RAG (Retrieval-Augmented Generation), ensuring emails are accurate, context-aware, and ready for dispatch.",
+      "image": "/reply-gen.png",
+      "repoLink": "https://github.com/AaronSosaRamos/reply-gen-frontend",
+      "liveDemoLink": "https://reply-gen.vercel.app/",
+      "videoLink": "https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ",
+      "techImages": ["/nextjs.png", "/react.png", "/fastapi.svg", "/langchain.png", "/openai.png", "/langchain.png", "/crewai.png", "/google.png", "/tavily.png"],
+      "hasLiveDemo": true
+    },
+    {
+      "title": "FlyOps",
+      "description": "FlyOps comprises three AI multi-agents (Assistant, Analyst, Researcher) designed to automate the flight booking process. These agents query databases for flight availability, retrieve relevant information, and book flights based on payment conditions. The system is built with NextJS, React, Tailwind, FastAPI, LangChain, LangGraph, and CrewAI Streamlit UI, and incorporates Google Generative AI, SQLite, Uvicorn, Pydantic Schema, SQLAlchemy (ORM), and Tavily for a seamless, multimodal booking experience.",
+      "image": "/flyops.png",
+      "repoLink": "https://github.com/AaronSosaRamos/flyops-frontend",
+      "liveDemoLink": "https://flyops.vercel.app/",
+      "videoLink": "https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ",
+      "techImages": ["/nextjs.png", "/react.png", "/fastapi.svg", "/langchain.png", "/crewai.png", "/streamlit.png", "/sqlite.png", "/uvicorn.png", "/pydantic.png", "/sqlalchemy.png", "/tavily.png"],
+      "hasLiveDemo": true
+    },
+    {
       title: 'Gemini Quizzify',
       description: 'Implemented an AI-driven pipeline to automate the creation of various question types, including "Fill in the Blank", "Open Ended", "True/False", "Multiple Choice", "Relate Concepts", and "Math Exercises". The pipeline leverages the RAG (Retrieval-Augmented Generation) approach to extract context from diverse file formats such as PDFs, CSVs, Word documents, images, and YouTube videos. The frontend was built using NextJS and deployed on Vercel, while the backend integrated advanced technologies like LangChain, Vertex AI API, Streamlit UI, ChromaDB, and PyPDF to ensure robust question generation and efficient handling of different data sources.',
       image: '/ai-gemini-quizzify.jpeg',
@@ -85,6 +105,16 @@ const Projects = () => {
       hasLiveDemo: true
     },
     {
+      "title": "AI PPT Builder",
+      "description": "AI PPT Builder automates the creation of professional-grade slides by integrating a powerful tech stack that includes NextJS, React, Tailwind, FastAPI, LangChain, OpenAI GPT-4o-mini, and GoogleGenerativeAI. It utilizes Gradio and ChromaDB for Retrieval-Augmented Generation (RAG) capabilities, offering support for over 14 file types including PDFs, CSVs, PPTX, DOCX, and Google formats. This platform streamlines slide creation with advanced multimodal support for rich presentations.",
+      "image": "/ai-ppt-builder.png",
+      "repoLink": "https://github.com/AaronSosaRamos/ai-ppt-builder-frontend",
+      "liveDemoLink": "https://ai-ppt-builder.vercel.app/",
+      "videoLink": "https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ",
+      "techImages": ["/nextjs.png", "/react.png", "/fastapi.svg", "/langchain.png", "/openai.png", "/google.png", "/gradio.png", "/chromadb.png", '/docker.png', '/render.svg'],
+      "hasLiveDemo": true
+    },
+    {
       title: 'Notes Management App',
       description: 'Full-Stack app which supports the notes management with active and archived notes, as well as categories and efficient filters for optimal notes retrievement. It was made using NextJS, NestJS, PostgreSQL, Multi-Stage Build in Docker-Compose, compatibility with Linux/Windows and deployed in Vercel',
       image: '/notesmanagementapp.png',
@@ -93,30 +123,6 @@ const Projects = () => {
       videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
       techImages: ['/nextjs.png', '/nestjs.png', '/postgresql.png', '/docker.png', '/docker-compose.png', '/bash.png', '/vercel.png'],
       hasLiveDemo: true
-    },
-    {
-      title: 'AI PPT Builder',
-      description: 'Automates the development of outstanding slides using LangChain, Gradio, GoogleGenerativeAI and ChromaDB. Supports more than 14 different file types (PDF, CSV, TXT, MD, URL, PPTX, DOCX, XLS/XLSX, XML, Google Docs, Google Sheets, Google Slides, Google PDF) and enhances multimodal support for images (PNG, JPG, JPEG).',
-      image: '/aipptbuilder.png',
-      repoLink: 'https://github.com/AaronSosaRamos/AIPPTBuilder',
-      videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
-      techImages: ['/langchain.png', '/gradio.png', '/vertexai.png', '/chromadb.png']
-    },
-    {
-      title: 'Email Response Automation with AI',
-      description: 'Developed an AI Agent that automates the generation of draft e-mails using LangGraph, CrewAI, Gmail API, and Tavily when the required knowledge is outside of its context scope.',
-      image: '/emailresponseautomation.png',
-      repoLink: 'https://github.com/AaronSosaRamos/email-response-automation-with-crewai-langgraph',
-      videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
-      techImages: ['/langchain.png', '/crewai.png', '/gmail.png', '/tavily.png']
-    },
-    {
-      title: 'Gemini Flight Manager',
-      description: 'Developed an AI agent for automating the process of booking flights. Retrieves info from databases about available flights and books the required flights based on payment criteria. Developed using LangChain, Streamlit UI, Vertex AI API, FastAPI, SQLite, Uvicorn, Pydantic Schema, and SQLAlchemy (ORM).',
-      image: '/mission-flights.png',
-      repoLink: 'https://github.com/AaronSosaRamos/mission-flights',
-      videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
-      techImages: ['/langchain.png', '/streamlit.png', '/vertexai.png', '/fastapi.svg', '/sqlite.png', '/uvicorn.png', '/pydantic.png', '/sqlalchemy.png']
     },
     {
       title: 'Marvel AI Backend (Open Source)',
