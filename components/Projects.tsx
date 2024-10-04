@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Github, Youtube, ExternalLink } from 'lucide-react';
+import { Github, Youtube, ExternalLink, FileText } from 'lucide-react';
 
 const Projects = () => {
   const projectData = [
@@ -12,7 +12,8 @@ const Projects = () => {
       "liveDemoLink": "https://ai-code-ds-assistant-frontend.vercel.app/",
       "videoLink": "https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ",
       "techImages": ["/nextjs.png", "/react.png", "/vercel.png", "/redux.png", "/python.png", '/docker.png', "/fastapi.svg", "/vertexai.png", "/openai.png", "/langchain.png", "/google.png", '/render.svg'],
-      "hasLiveDemo": true
+      "hasLiveDemo": true,
+      "paperLink": "https://drive.google.com/file/d/1RGUmJ-55PfceUWg29n71taJ_eVA2xCGp/view?usp=drive_link"
     },
     {
       title: "LLMHub",
@@ -23,6 +24,7 @@ const Projects = () => {
       videoLink: "https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ",
       techImages: ["/nextjs.png", "/react.png", "/vercel.png", "/gcp.png", "/python.png", '/docker.png', "/fastapi.svg", "/vertexai.png", "/openai.png", "/langchain.png", "/claudehaiku.png"],
       hasLiveDemo: true,
+      paperLink: "https://llmhub-main.vercel.app/"
     },
     {
       title: "AI Writing Services",
@@ -32,7 +34,8 @@ const Projects = () => {
       liveDemoLink: "https://ai-writing-services.vercel.app/",
       videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
       techImages: ['/react.png', '/python.png', '/fastapi.svg', '/docker.png', '/vertexai.png', "/openai.png", "/langchain.png", "/google.png", '/vercel.png', '/render.svg'],
-      hasLiveDemo: true
+      hasLiveDemo: true,
+      paperLink: "https://drive.google.com/file/d/1zfjNP81LV8ZNl_SKPVh3mI8Fxs5p-n0S/view?usp=drive_link"
     },
     {
       title: 'Gemini Dynamo',
@@ -42,7 +45,8 @@ const Projects = () => {
       liveDemoLink: "https://gemini-dynamo-frontend.vercel.app/",
       videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
       techImages: ['/nextjs.png', '/vercel.png', '/langchain.png', '/docker.png', '/fastapi.svg', '/vertexai.png', '/render.svg', "/google.png"],
-      hasLiveDemo: true
+      hasLiveDemo: true,
+      paperLink: "https://drive.google.com/file/d/1C9irjHAMnDE-T4_XcraRkcHuoUaLjqla/view?usp=drive_link"
     },
     {
       title: "AI Code Productivity Booster",
@@ -53,6 +57,7 @@ const Projects = () => {
       videoLink: "https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ",
       techImages: ["/nextjs.png", "/vercel.png", "/langchain.png", "/gcp.png", '/docker.png', "/fastapi.svg", "/vertexai.png", "/openai.png", "/google.png", "/crewai.png"],
       hasLiveDemo: true,
+      paperLink: "https://ai-code-productivity-booster.vercel.app/",
     },
     {
       title: "LearnifyAI",
@@ -63,6 +68,7 @@ const Projects = () => {
       videoLink: "https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ",
       techImages: ["/nextjs.png", "/vercel.png", "/gcp.png", "/openai.png", "/langchain.png", '/docker.png', "/fastapi.svg", "/vertexai.png"],
       hasLiveDemo: true,
+      paperLink: "https://drive.google.com/file/d/1ut6VlsOFvsaeQCdqLyHoCuJTsidoVajj/view?usp=drive_link"
     },
     {
       "title": "ReplyGen",
@@ -72,7 +78,8 @@ const Projects = () => {
       "liveDemoLink": "https://reply-gen.vercel.app/",
       "videoLink": "https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ",
       "techImages": ["/nextjs.png", "/react.png", "/fastapi.svg", "/langchain.png", "/openai.png", "/langchain.png", "/crewai.png", "/google.png", "/tavily.png"],
-      "hasLiveDemo": true
+      "hasLiveDemo": true,
+      paperLink: "https://reply-gen.vercel.app/",
     },
     {
       "title": "FlyOps",
@@ -82,7 +89,8 @@ const Projects = () => {
       "liveDemoLink": "https://flyops.vercel.app/",
       "videoLink": "https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ",
       "techImages": ["/nextjs.png", "/react.png", "/fastapi.svg", "/langchain.png", "/crewai.png", "/streamlit.png", "/sqlite.png", "/uvicorn.png", "/pydantic.png", "/sqlalchemy.png", "/tavily.png"],
-      "hasLiveDemo": true
+      "hasLiveDemo": true,
+      paperLink: "https://flyops.vercel.app/",
     },
     {
       title: 'Gemini Quizzify',
@@ -92,7 +100,8 @@ const Projects = () => {
       liveDemoLink: "https://gemini-quizzify-frontend.vercel.app/",
       videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
       techImages: ['/nextjs.png', '/vercel.png', '/langchain.png', '/vertexai.png', '/docker.png', '/streamlit.png', '/chromadb.png', '/render.svg'],
-      hasLiveDemo: true
+      hasLiveDemo: true,
+      paperLink: "https://drive.google.com/file/d/1smHf85lOby8vMj_UpjVAlkshahYrS3RG/view?usp=drive_link"
     },
     {
       title: 'Conversors Suite',
@@ -102,7 +111,8 @@ const Projects = () => {
       liveDemoLink: "https://conversors-suite.vercel.app/",
       videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
       techImages: ['/nextjs.png', '/vercel.png', '/python.png', '/fastapi.svg', '/langchain.png', '/vertexai.png', "/openai.png", "/google.png", '/docker.png', '/render.svg'],
-      hasLiveDemo: true
+      hasLiveDemo: true,
+      paperLink: "https://drive.google.com/file/d/1A6S-XoXYaYNMpX_XVkRnlAoaS5tntWdj/view?usp=drive_link"
     },
     {
       "title": "AI PPT Builder",
@@ -112,7 +122,8 @@ const Projects = () => {
       "liveDemoLink": "https://ai-ppt-builder.vercel.app/",
       "videoLink": "https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ",
       "techImages": ["/nextjs.png", "/react.png", "/fastapi.svg", "/langchain.png", "/openai.png", "/google.png", "/gradio.png", "/chromadb.png", '/docker.png', '/render.svg'],
-      "hasLiveDemo": true
+      "hasLiveDemo": true,
+      paperLink: "https://drive.google.com/file/d/1Z43Qt2LkzI4r86KQXC6Ur4F4Je2-FTHm/view?usp=drive_link"
     },
     {
       title: 'Notes Management App',
@@ -122,17 +133,19 @@ const Projects = () => {
       liveDemoLink: "https://notes-management-app-three.vercel.app/",
       videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
       techImages: ['/nextjs.png', '/nestjs.png', '/postgresql.png', '/docker.png', '/docker-compose.png', '/bash.png', '/vercel.png'],
-      hasLiveDemo: true
+      hasLiveDemo: true,
+      paperLink: "https://drive.google.com/file/d/1u7uj7fhFBsHXkNuj91B57QbraVlS25G5/view?usp=drive_link"
     },
     {
       title: 'Marvel AI Backend (Open Source)',
       description: 'Led a multidisciplinary team for extending the file support with more than 14 file types as well as enhancing the multimodal support for images and multilingual support. Additionally, we implemented a worksheet and syllabus generator; and optimized the key concepts retriever with efficient and state-of-art AI pipelines.',
-      image: '/kaiaibackend.png',
+      image: '/marvel-ai.png',
       repoLink: 'https://github.com/radicalxdev/marvel-ai-backend',
       videoLink: 'https://www.youtube.com/channel/UC8Vle-7wLnxVQpc2y_K3kLQ',
       techImages: ['/langchain.png', '/gradio.png', '/vertexai.png', '/chromadb.png'],
-      liveDemoLink: "https://kai.radicalai.app/signin/",
-      hasLiveDemo: true
+      liveDemoLink: "https://kai.radicalai.app/",
+      hasLiveDemo: true,
+      paperLink: "https://kai.radicalai.app/"
     }
   ];
 
@@ -175,28 +188,43 @@ const Projects = () => {
                   />
                 ))}
               </div>
-              <div className="flex flex-col lg:flex-row flex-wrap justify-center items-center max-xl:space-y-2 md:space-x-4 w-full">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full justify-items-center items-center">
                 {project.hasLiveDemo && (
-                  <Link href={project.liveDemoLink} target="_blank">
-                    <span className="inline-flex items-center justify-center bg-green-600 dark:bg-green-700 text-white py-2 px-4 rounded-md text-lg font-medium hover:bg-green-700 dark:hover:bg-green-600 transition duration-300 ease-in-out w-full sm:w-auto text-center">
-                      <ExternalLink className="h-5 w-5 mr-2" />
-                      Live Demo
+                  <div className='md:pr-3'>
+                    <Link href={project.liveDemoLink} target="_blank">
+                      <span className="inline-flex items-center justify-center bg-green-600 dark:bg-green-700 text-white py-2 px-4 rounded-md text-lg font-medium hover:bg-green-700 dark:hover:bg-green-600 transition duration-300 ease-in-out w-full min-w-[180px] text-center">
+                        <ExternalLink className="h-5 w-5 mr-2" />
+                        Live Demo
+                      </span>
+                    </Link>
+                  </div>
+                )}
+                <div className='md:pl-3'>
+                  <Link href={project.repoLink} target="_blank">
+                    <span className="inline-flex items-center justify-center bg-purple-600 dark:bg-purple-700 text-white py-2 px-4 rounded-md text-lg font-medium hover:bg-purple-700 dark:hover:bg-purple-600 transition duration-300 ease-in-out w-full min-w-[180px] text-center">
+                      <Github className="h-5 w-5 mr-2" />
+                      Repository
                     </span>
                   </Link>
-                )}
-                <Link href={project.repoLink} target="_blank">
-                  <span className="inline-flex items-center justify-center bg-purple-600 dark:bg-purple-700 text-white py-2 px-4 rounded-md text-lg font-medium hover:bg-purple-700 dark:hover:bg-purple-600 transition duration-300 ease-in-out w-full sm:w-auto text-center">
-                    <Github className="h-5 w-5 mr-2" />
-                    Repository
-                  </span>
-                </Link>
-                <Link href={project.videoLink} target="_blank">
-                  <span className={`inline-flex items-center justify-center bg-red-600 dark:bg-red-700 text-white py-2 px-4 rounded-md text-lg font-medium hover:bg-red-700 dark:hover:bg-red-600 transition duration-300 ease-in-out w-full sm:w-auto text-center ${project.hasLiveDemo ? 'xl:mt-3' : ''} `}>
-                    <Youtube className="h-5 w-5 mr-2" />
-                    Video
-                  </span>
-                </Link>
+                </div>
+                <div className='md:pr-3'>
+                  <Link href={project.paperLink} target="_blank">
+                    <span className="inline-flex items-center justify-center bg-blue-600 dark:bg-blue-700 text-white py-2 px-4 rounded-md text-lg font-medium hover:bg-blue-700 dark:hover:bg-blue-600 transition duration-300 ease-in-out w-full min-w-[180px] text-center">
+                      <FileText className="h-5 w-5 mr-2" />
+                      Paper
+                    </span>
+                  </Link>
+                </div>
+                <div className='md:pl-3'>
+                  <Link href={project.videoLink} target="_blank">
+                    <span className="inline-flex items-center justify-center bg-red-600 dark:bg-red-700 text-white py-2 px-4 rounded-md text-lg font-medium hover:bg-red-700 dark:hover:bg-red-600 transition duration-300 ease-in-out w-full min-w-[180px] text-center">
+                      <Youtube className="h-5 w-5 mr-2" />
+                      Video
+                    </span>
+                  </Link>
+                </div>
               </div>
+
             </div>
           ))}
         </div>
