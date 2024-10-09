@@ -56,7 +56,7 @@ const ResearchesSlider = () => {
                   </div>
                   <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2 text-center">{research.title}</h3>
                   <p className="text-gray-700 dark:text-gray-300 mb-4 text-center">{research.description}</p>
-                  <div className="flex justify-center space-x-4 mb-4">
+                  <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-4">
                     <Link href={research.paperLink} target="_blank">
                       <span className="inline-flex items-center bg-blue-600 dark:bg-blue-700 text-white py-2 px-8 rounded-md text-lg font-medium hover:bg-blue-700 dark:hover:bg-blue-600 transition duration-300 ease-in-out">
                         <FileText className="h-5 w-5 mr-2" />
